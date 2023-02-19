@@ -328,13 +328,15 @@ class _TicketDetailsPageState extends State<TicketDetailsPage> {
                 BarChartRodData(
                     fromY: 0,
                     toY: double.tryParse(
-                        getStateforChart(index, state, 0).value)!,
+                            getStateforChart(index, state, 0).value) ??
+                        0,
                     width: 45,
                     color: Colors.amberAccent),
                 BarChartRodData(
                     fromY: 0,
                     toY: double.tryParse(
-                        getStateforChart(index, state, 1).value)!,
+                            getStateforChart(index, state, 1).value) ??
+                        0,
                     width: 45,
                     color: Colors.red),
               ]),
@@ -342,7 +344,8 @@ class _TicketDetailsPageState extends State<TicketDetailsPage> {
                 BarChartRodData(
                     fromY: 0,
                     toY: double.tryParse(
-                        getStateforChart(index, state, 2).value)!,
+                            getStateforChart(index, state, 2).value) ??
+                        0,
                     width: 45,
                     color: Colors.green),
               ]),
@@ -350,7 +353,8 @@ class _TicketDetailsPageState extends State<TicketDetailsPage> {
                 BarChartRodData(
                     fromY: 0,
                     toY: double.tryParse(
-                        getStateforChart(index, state, 3).value)!,
+                            getStateforChart(index, state, 3).value) ??
+                        0,
                     width: 45,
                     color: Colors.blue),
               ]),
@@ -358,7 +362,8 @@ class _TicketDetailsPageState extends State<TicketDetailsPage> {
                 BarChartRodData(
                     fromY: 0,
                     toY: double.tryParse(
-                        getStateforChart(index, state, 4).value)!,
+                            getStateforChart(index, state, 4).value) ??
+                        0,
                     width: 45,
                     color: Colors.black),
               ]),
